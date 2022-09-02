@@ -1,11 +1,15 @@
 import * as React from "react"
 
-const IndexPage = () => {
-  return (
-    <main />
-  )
-}
+import BioPage from './bio.js'
+
+import Layout from '../components/Layout/Layout'
+
+import '../assets/style/global.scss'
+
+const IndexPage = () => (
+  <Layout>
+    <BioPage />
+  </Layout>
+)
 
 export default IndexPage
-
-export const Head = () => <title>Home Page</title>
