@@ -1,0 +1,84 @@
+.message {
+  display: flex;
+  flex-flow: row wrap;
+  font-family: "Vazirmatn-Regular", georgia, serif;
+  position: relative;
+
+  &-contact {
+    justify-content: flex-start;
+  }
+  
+  &-user {
+    justify-content: flex-end;
+  }
+  
+  &-inner {
+    padding: 6px 14px;
+    max-width: 280px;
+    position: relative;
+    direction: rtl;
+    
+    p {
+      margin: 0;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      height: 10px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      height: 10px;
+    }
+
+    @media screen and (min-width: 768px) {
+      max-width: 580px;
+    }
+  }
+  
+  &-contact-text {
+    margin: 4px 0 4px 10px;
+    border-radius: 0 10px 10px 10px;
+    background-color: #f98900;
+    
+    &:before {
+      top: 0;
+      left: -8px;
+      border-top-right-radius: 0 16px;
+      border-left: 8px solid #f98900;
+    }
+
+    &:after {
+      top: 0;
+      left: -8px;
+      width: 8px;
+      background-color: #242322;
+      border-top-right-radius: 10px;
+    }
+  }
+  
+  &-user-text {
+    margin: 4px 10px 4px 0;
+    border-radius: 10px 0 10px 10px;
+    background-color: #363534;
+    color: #dcdcdc;
+
+    &:before {
+      top: 0;
+      right: -8px;
+      border-top-left-radius: 0 16px;
+      border-right: 8px solid #363534;
+    }
+
+    &:after {
+      top: 0;
+      right: -8px;
+      width: 8px;
+      background-color: #242322;
+      border-top-left-radius: 10px;
+    }
+  }
+}
