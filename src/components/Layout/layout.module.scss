@@ -1,0 +1,11 @@
+.layout {
+  background-color: #242322;
+  height: 100vh;
+  overflow-y: auto;
+  width: 100%;
+  max-width: 1080px;
+  text-align: right;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0 auto;
+}
